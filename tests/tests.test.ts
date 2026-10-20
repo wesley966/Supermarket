@@ -8,7 +8,6 @@ import {Armazenamento} from "../src/services/Armazenamento"
 //Test 3
 describe('Verify the negative number on the ID field of the User', () => {
     test('The ID should not accept negative numbers', () => {
-        //arrange
 
         expect(() => {
             const user = new User(-1, "John Doe", "john@example.com", "EMPLOYEE");
@@ -20,7 +19,6 @@ describe('Verify the negative number on the ID field of the User', () => {
 //Test 4
 describe('Verify the non-integer numbers on the ID field on the User', () => {
     test('The ID should not accept non-integer numbers', () => {
-        //arrange
         expect(() => {
               const user = new User(1.5, "John Doe", "john@example.com", "EMPLOYEE");
             user.getId();
@@ -31,10 +29,9 @@ describe('Verify the non-integer numbers on the ID field on the User', () => {
 //Test 16
 describe('Verify admim permissions', () => {
     test('The admin should have management permissions on true', () => {
-        //arrange
+
         const admin = new Admin(1, "Admin User", "admin@example.com");
 
-        //assert
         expect(admin.canManageUsers()).toBe(true);
     });
 });
@@ -42,6 +39,7 @@ describe('Verify admim permissions', () => {
 //Test 18
 describe('Verify supervisor permissions', () => {
     test('The supervisor should not have management permissions', () => {
+
         const supervisor = new Supervisor(
             1,
             "Supervisor User",
@@ -55,18 +53,20 @@ describe('Verify supervisor permissions', () => {
 //Test 20
 describe('Create employee with valid data', () => {
     test('The spaces should be valid', () => {
-//arrange
-const employee = new Employee( 3, "Fernando", "Fernandoooo@ElementInternals.co", 2000, "Limpeza");
-//assert
 
+    const employee = new Employee( 3, "Fernando", "Fernandoooo@ElementInternals.co", 2000, "Limpeza");
 
+    expect(employee.getId()).toBe(3);
+    expect(employee.getName()).toBe('Fernando');
+    expect(employee.getSalary()).toBe(2000);
+    expect(employee.getDepartment()).toBe('Limpeza');
     });
 });
 
 //Test 21
 describe('Reject salary equals to zero', () => {
  test('The salary of the employee cannot be zero',  ()=> {
- //arrange
+
   expect(() => {
      const employee = new Employee( 3, "Fernando", "Fernandoooo@ElementInternals.com", 0, "Limpeza");
             employee.getSalary();
@@ -88,20 +88,18 @@ describe('Validate user by E-mail', () => {
 //Test 49
 describe('User count on the stock if is negative', () => {
 test('Consulting the Users on stock need to be zero and throw error', () => {
-    //arrange
+
     const stock = new Armazenamento();
     const user1 = new User(5, 'Daniel', 'dani127@email.com', "EMPLOYEE")
     const user2 = new User(6, 'Ronaldo', 'Ronald@email.com', "EMPLOYEE")
     const user3 = new User(7, 'Donald', 'Dona@email.com', "EMPLOYEE")
 
-    //act
         stock.addUser(user1);
          stock.addUser(user2);
           stock.addUser(user3);
           
           stock.clear();
 
- //assert
         expect(stock.getUserCount()).toBe(0);
     });
 });
@@ -117,15 +115,17 @@ describe('Reject service evaluation without valid stock', () => {
 
 //Test 57
   test('If the user has the salary at 0 is rejected', () => {
+
     expect(() => {
     new Employee(5, 'Daniel', 'email@email.com', 0, 'EMPLOYEE')
-}).toThrow();
+    }).toThrow();
   })
 
 
 //Test 74
 describe("Search by id", ()  => {
     test('Try the valid id and the invalid', () => {
+
          const user1 = new User(5, 'Daniel', 'dani127@email.com', "EMPLOYEE")
 
          expect(user1.getId()).toBe(5);
