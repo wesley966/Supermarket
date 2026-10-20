@@ -11,7 +11,9 @@ describe('Verify the negative number on the ID field of the User', () => {
 
         expect(() => {
             const user = new User(-1, "John Doe", "john@example.com", "EMPLOYEE");
+
             user.getId();
+
         }).toThrow("User ID must be a positive integer");
     });
 });
@@ -19,9 +21,13 @@ describe('Verify the negative number on the ID field of the User', () => {
 //Test 4
 describe('Verify the non-integer numbers on the ID field on the User', () => {
     test('The ID should not accept non-integer numbers', () => {
+
         expect(() => {
+
               const user = new User(1.5, "John Doe", "john@example.com", "EMPLOYEE");
+
             user.getId();
+
         }).toThrow("User ID must be a positive integer.");
     });
 });
@@ -68,8 +74,11 @@ describe('Reject salary equals to zero', () => {
  test('The salary of the employee cannot be zero',  ()=> {
 
   expect(() => {
+
      const employee = new Employee( 3, "Fernando", "Fernandoooo@ElementInternals.com", 0, "Limpeza");
+
             employee.getSalary();
+
         }).toThrow("Salary must be a finite number greater than zero.");
 });
 });
@@ -77,8 +86,11 @@ describe('Reject salary equals to zero', () => {
 //Test 40
 describe('Validate user by E-mail', () => {
     test('Testing if the users email is valid', () => {
+
         expect(() => {
+
             new User( 1,"John Doe","","EMPLOYEE" );
+
         }).toThrow();
     });
 });
@@ -107,6 +119,7 @@ test('Consulting the Users on stock need to be zero and throw error', () => {
 //Test 51
 describe('Reject service evaluation without valid stock', () => {
     test('The stock should start with zero users', () => {
+
         const stock = new Armazenamento();
 
         expect(stock.getUserCount()).toBe(0);
@@ -117,7 +130,9 @@ describe('Reject service evaluation without valid stock', () => {
   test('If the user has the salary at 0 is rejected', () => {
 
     expect(() => {
+
     new Employee(5, 'Daniel', 'email@email.com', 0, 'EMPLOYEE')
+
     }).toThrow();
   })
 
@@ -131,7 +146,9 @@ describe("Search by id", ()  => {
          expect(user1.getId()).toBe(5);
 
           expect(() => {
+
             new User( 0,"John Doe","dani127@email.com'","EMPLOYEE" );
+            
         }).toThrow();
         
     });
