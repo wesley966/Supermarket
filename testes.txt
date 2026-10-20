@@ -1,0 +1,33 @@
+
+> supermarket@1.0.0 test
+> jest
+
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151002: [0mUsing hybrid module kind (Node16/18/Next) is only supported in "isolatedModules: true". Please set "isolatedModules: true" in your tsconfig.json. To disable this message, you can set "diagnostics.ignoreCodes" to include 151002 in your ts-jest config. See more at https://kulshekhar.github.io/ts-jest/docs/getting-started/options/diagnostics
+PASS tests/tests.test.ts
+  √ If the user has the salary at 0 is rejected (1 ms)
+  Verify the negative number on the ID field of the User
+    √ The ID should not accept negative numbers (18 ms)
+  Verify the non-integer numbers on the ID field on the User
+    √ The ID should not accept non-integer numbers (1 ms)
+  Verify admim permissions
+    √ The admin should have management permissions on true
+  Verify supervisor permissions
+    √ The supervisor should not have management permissions
+  Create employee with valid data
+    √ The spaces should be valid
+  Reject salary equals to zero
+    √ The salary of the employee cannot be zero (2 ms)
+  Validate user by E-mail
+    √ Testing if the users email is valid (1 ms)
+  User count on the stock if is negative
+    √ Consulting the Users on stock need to be zero and throw error (1 ms)
+  Reject service evaluation without valid stock
+    √ The stock should start with zero users (1 ms)
+  Search by id
+    √ Try the valid id and the invalid (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       11 passed, 11 total
+Snapshots:   0 total
+Time:        3.856 s
+Ran all test suites.

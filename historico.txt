@@ -1,0 +1,169 @@
+    1  git init
+    2  git branch -m main
+    3  git status
+    4  git add.
+    5  git add .
+    6  git commit -m "Criacao do arquivo principal do Index.html"
+    7  git log
+    8  git status
+    9  git remote add origin https://github.com/wesley966/Rev-UC10.git
+   10  git branch -v
+   11  git remote
+   12  git push origin main
+   13  git push origin main -f
+   14  dir
+   15  git pull origin main
+   16  dir
+   17  clear
+   18  git pull
+   19  git pull origin main
+   20  git status
+   21  git status
+   22  git add .
+   23  git commit -m "Alterado o arquivo edicao.html"
+   24  git status
+   25  git pull origin main
+   26  git fetch
+   27  git push origin main
+   28  git branch feature/dashboard
+   29  git branch -d freature/dashboard
+   30  git branch -d feature/dashboard
+   31  git branch
+   32  git push origin --delete feature/dashboard
+   33  git status
+   34  git init
+   35  git branch -M main
+   36  touch index.html
+   37  touch README.md
+   38  touch .gitignore
+   39  git add index.html
+   40  git status
+   41  git commit -m "Criação da página inicial do delivery"
+   42  git add README.md
+   43  git commit -m "Criação da documentação inicial"
+   44  git add .gitignore
+   45  git commit -m "Configuração do gitignore"
+   46  git log --oneline
+   47  git remote add origin https://github.com/wesley966/pizza_delivery_git.git
+   48  git remote -v
+   49  git push -u origin main
+   50  git switch -c develop
+   51  git push -u origin develop
+   52  git switch -c feature/novobotao
+   53  git status
+   54  git init
+   55  git remote add -u origin https://github.com/wesley966/PI.git
+   56  git remote -M origin https://github.com/wesley966/PI.git
+   57  git branch -M main
+   58  touch README.md
+   59  git stats
+   60  git status
+   61  git add .
+   62  git commit -m "Adicionando arquivo README.md"
+   63  git remote add oriin https://github.com/wesley966/PI.git
+   64  git push -u origin main
+   65  git status
+   66  git remote -v
+   67  git status
+   68  git add .
+   69  git commit -m "Adicionando o README.md atualizado"
+   70  git push -u origin main
+   71  git pull
+   72  git status
+   73  git push -u origin main
+   74  git remote add origin https://github.com/wesley966/PI.git
+   75  git remote -v
+   76  git pull
+   77  git push -u origin main
+   78  git push -u origin main -f
+   79  git add .
+   80  git commit -m "Documento atualizado"
+   81  git push -u origin main
+   82  git add .
+   83  git commit -m "Tudo atualizado"
+   84  git push -u origin main
+   85  git add .
+   86  git commit -m "README.md atualizado"
+   87  git push -u origin mainn
+   88  git push -u origin main
+   89  git add .
+   90  git commit -m "Arquivo README.md completo"
+   91  git push -u origin main
+   92  git init
+   93  git branch -M main
+   94  git remote add origin https://github.com/wesley966/PI.git
+   95  git remote -v
+   96  git status
+   97  touch .gitignore
+   98  touch index.html
+   99  git status
+  100  code .
+  101  git add .
+  102  git commit -m "Adicionando a atualização do RADME.md, e adicinando os novos arquivos .gitignore e index.html"
+  103  git status
+  104  git push . origin main
+  105  git push origin main
+  106  git push origin main -f
+  107  git status
+  108  git branch
+  109  touch main.tex
+  110  git ststus
+  111  git status
+  112  git add.
+  113  git add .
+  114  git commit -m "Adicionando o arquivo main.tex com o comeco do arquivo"
+  115  git push origin main
+  116  git status
+  117  git status
+  118  git add .
+  119  git commit -m " Apenas o comeco do projeto adicionado como exmplo"
+  120  git push origin main
+  121  git status
+  122  mkdir src
+  123  mv index.html src/
+  124  dir src
+  125  git status
+  126  git add .
+  127  git commit -m "Adicionando a pasta src e colocando index.html dentro"
+  128  git push origin main
+  129  git status
+  130  npm init -y
+  131  `git status
+  132  git statsu
+  133  git status
+  134  node -v
+  135  git status
+  136  git add .
+  137  git commit -m "Adicionado o arquivo package.json"
+  138  git statsu
+  139  git status
+  140  git push origin main
+  141  git status
+  142  mkdir src/css
+  143  touch src/css/style.css
+  144  git status
+  145  mkdir src/js
+  146  touch src/js/script.js
+  147  git add src/css/style.css
+  148  git commit "Adiconando o arquivo style.css dentro da pasta css dentro da pasta src"
+  149  git commit -m "Adicionando src/css/style.css"
+  150  git add src/js/script.js
+  151  git commit -m "Adicionando arquivo src/ja/script.js"
+  152  git push origin main
+  153  mkdir tests
+  154  touch tests/casos-de-teste.md
+  155  git add .
+  156  git commit -m "Adicionando o arquivo casos de texte"
+  157  git push origin main
+  158  npm install
+  159  git status
+  160  git add .
+  161  git commit -m "Adiconando package-lock.json"
+  162  git push origin main
+  163  mkdir docs
+  164  git add .
+  165  git commit -m"Adicionando arquivo docs"
+  166  git push origin main
+  167  git status
+  168  code .
+  169  history > historico.txt
