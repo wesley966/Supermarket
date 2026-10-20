@@ -148,7 +148,7 @@ describe("Search by id", ()  => {
           expect(() => {
 
             new User( 0,"John Doe","dani127@email.com'","EMPLOYEE" );
-            
+
         }).toThrow();
         
     });
